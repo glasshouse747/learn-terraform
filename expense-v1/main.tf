@@ -8,7 +8,7 @@ resource "aws_instance" "frontend" {
   }
 }
 
-resource "aws_route53_record" "www" {
+resource "aws_route53_record" "frontend" {
   zone_id = "Z04449162OZ21YMXF20XW"
   name    = "frontend.mydevops75.online"
   type    = "A"
@@ -26,7 +26,7 @@ resource "aws_instance" "backend" {
   }
 }
 
-resource "aws_route53_record" "www" {
+resource "aws_route53_record" "backend" {
   zone_id = "Z04449162OZ21YMXF20XW"
   name    = "backend.mydevops75.online"
   type    = "A"
@@ -44,7 +44,7 @@ resource "aws_instance" "mysql" {
   }
 }
 
-resource "aws_route53_record" "www" {
+resource "aws_route53_record" "mysql" {
   zone_id = "Z04449162OZ21YMXF20XW"
   name    = "mysql.mydevops75.online"
   type    = "A"
