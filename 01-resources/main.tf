@@ -12,5 +12,5 @@ resource "aws_route53_record" "www" {
   name    = "test.mydevops75.online"
   type    = "A"
   ttl     = 5
-  records = [aws_instance.web.private_ip]
+  records = [ aws_instance.web.private_ip ]
 }
