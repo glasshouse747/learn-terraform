@@ -14,3 +14,4 @@ resource "aws_route53_record" "www" {
   ttl     = 5
   records = [ aws_instance.web.private_ip ]
 }
+
