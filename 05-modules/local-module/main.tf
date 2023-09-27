@@ -3,3 +3,5 @@ resource "null_resource" "test" {
    command = "echo Hello World"
  }
 }
+
+variable "input" {}
